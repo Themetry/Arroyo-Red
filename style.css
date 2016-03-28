@@ -1,0 +1,83 @@
+/*
+ Theme Name:   Arroyo Red
+ Theme URI:    https://themetry.com/arroyo-accent-color/
+ Description:  This is a child theme of Themetry's Arroyo theme, used to demonstrate applying an accent color.
+ Author:       Themetry
+ Author URI:   https://themetry.com
+ Template:     arroyo
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain:  arroyo-red
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Accent Color
+# Maintain Parent Styles
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Accent Color
+--------------------------------------------------------------*/
+a,
+.entry-meta,
+a:visited {
+	color: #ef0000;
+}
+
+.menu-toggle:hover,
+.widget-title:after,
+.widgettitle:after {
+	border-color: #ef0000;
+}
+
+.menu-toggle {
+	border-color: #fab2b2;
+}
+
+@media (min-width: 769px) and (max-width: 1298px) {
+	.blog .hentry .entry-title:before,
+	.blog .hentry .entry-title:after {
+		border-color: #ef0000;
+	}
+
+	.blog .hentry:before {
+		border-color: #fab2b2;
+	}
+}
+
+@media (min-width: 1299px) {
+	.blog .hentry:nth-of-type(4n+1) .entry-title:before,
+	.blog .hentry:nth-of-type(4n+1) .entry-title:after,
+	.blog .hentry:nth-of-type(4n+2) .entry-title:before,
+	.blog .hentry:nth-of-type(4n+2) .entry-title:after {
+		border-color: #ef0000;
+	}
+
+	.blog .hentry:nth-of-type(4n+1):before {
+		border-color: #fab2b2;
+	}
+
+	.blog .hentry:nth-of-type(4n+2):before {
+		border-color: #f56666;
+	}
+}
+
+/*--------------------------------------------------------------
+# Maintain Parent Styles
+--------------------------------------------------------------*/
+.site-title a,
+.entry-title a,
+.main-navigation a,
+.comment-navigation a,
+.read-more a {
+	color: #000;
+}
+
+a.page-numbers,
+.post-navigation a,
+.page-links a {
+	color: #fff;
+}
